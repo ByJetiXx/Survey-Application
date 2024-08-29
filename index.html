@@ -1,0 +1,17 @@
+<button onclick="oyVer('Evet')">Evet</button>
+<button onclick="oyVer('Hayır')">Hayır</button>
+<p id="sonuc"></p>
+
+<script>
+let evetSayisi = 0;
+let hayirSayisi = 0;
+
+function oyVer(oy) {
+    if (oy === 'Evet') {
+        evetSayisi++;
+    } else {
+        hayirSayisi++;
+    }
+    document.getElementById('sonuc').innerText = `Evet: ${evetSayisi}, Hayır: ${hayirSayisi}`;
+}
+</script>
